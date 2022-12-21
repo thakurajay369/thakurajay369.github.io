@@ -1,0 +1,66 @@
+#visitor_page {
+    z-index: 30;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: antiquewhite;
+    /* justify-content: center; */
+    align-items: center;
+    animation-name: squeeze;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#background_of_flex {
+    /* max-width: 900px; */
+    width: 100vw;
+}
+
+.animated_text {
+    display: inline-block;
+    font-size: 15vh;
+    font-weight: 600;
+    border-right: solid 4px transparent;
+    overflow: hidden;
+}
+
+#oops_div {
+    z-index: 40;
+    display: inline-block;/* inline-block */
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    padding: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    border: solid 2px rgba(255, 0, 0, 0.8);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0.8);
+    margin: 10px 20px;
+    animation-name: downUp;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes squeeze {
+    from {transform: scale(1, 1);}
+    to {transform: scale(0, 0);}
+}
+
+@keyframes downUp {
+    0% {top: -170px;}
+    20% {top: 0px;}
+    80% {top: 0px;}
+    100% {top: -170px;}
+}

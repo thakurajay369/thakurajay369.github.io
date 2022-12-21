@@ -1,0 +1,56 @@
+.point_balls {
+    z-index: 2;
+    width: 3px;
+    height: 3px;
+    box-sizing: border-box;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    transition: left 1.5s, top 1.5s;
+}
+.red-blue {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: solid 6px blue;
+    border-left: solid 6px red;
+    border-right: solid 6px red;
+    border-bottom: solid 6px red;
+}
+.orange-purple {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: solid 6px purple;
+    border-left: solid 6px orangered;
+    border-right: solid 6px orangered;
+    border-bottom: solid 6px orangered;
+}
+.blue-purple {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: solid 6px purple;
+    border-left: solid 6px blue;
+    border-right: solid 6px blue;
+    border-bottom: solid 6px blue;
+}
+.purple-red {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: solid 6px red;
+    border-left: solid 6px purple;
+    border-right: solid 6px purple;
+    border-bottom: solid 6px purple;
+}
+.orange-red {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: solid 6px red;
+    border-left: solid 6px orange;
+    border-right: solid 6px orange;
+    border-bottom: solid 6px orange;
+}

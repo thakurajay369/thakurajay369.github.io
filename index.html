@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="visitor.css">
+    <link rel="stylesheet" href="backgroundBalls.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="upper_items">
+            <div class="icon_div">
+                <img src="unProcessed/user_unfilled.png" alt="ME" class="icons">
+            </div>
+            <div class="icon_div">
+                <img src="unProcessed/project.png" alt="ME" class="icons">
+            </div>
+            <div class="icon_div">
+                <img src="unProcessed/skills.png" alt="ME" class="icons">
+            </div>
+            <div class="icon_div">
+                <img src="unProcessed/contact.png" alt="ME" class="icons">
+            </div>
+        </div>
+        <div id="bottom_items">
+
+        </div>
+    </div>
+    <div id="background_div">
+        
+        <script>
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            const colors = ["red-blue", "orange-purple", "blue-purple", "purple-red", "orange-red"];
+            for(let i=1;i<=50;i++){
+                document.write('<div class="point_balls '+colors[i%5]+'" id="ball_'+i+'"></div>');
+                document.getElementById("ball_"+i).style.left = Math.floor(Math.random()*10000)%(w-50) + "px";
+                document.getElementById("ball_"+i).style.top = Math.floor(Math.random()*10000)%(h-50) + "px";
+            }
+        </script>
+        <div id="name_div">
+            <div id="im_text">I'm</div>
+            <div id="first_name">
+                AJAY
+            </div>
+            <div id="second_name">
+                KUMAR
+            </div>
+        </div>
+    </div>
+    <div id="oops_div">
+        OOPS :( SORRY ;)
+    </div>
+    <div id="visitor_page">
+        <div id="background_of_flex">
+            <div id="hello_world" class="animated_text"></div>
+        </div>
+    </div>
+    <script src="visitor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
